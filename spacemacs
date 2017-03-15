@@ -298,6 +298,13 @@ executes.
  This function is mostly useful for variables that need to be set
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
+  (setq-default
+   js2-strict-trailing-comma-warning nil
+   js2-strict-missing-semi-warning nil
+   js-indent-level 2
+   js2-basic-offset 2
+   json-indent-level 4
+   )
   )
 
 (defun dotspacemacs/user-config ()
@@ -322,11 +329,6 @@ you should place your code here."
  ;; If there is more than one, they won't work right.
  '(clean-aindent-mode t)
  '(indent-tabs-mode nil)
- '(js2-strict-trailing-comma-warning nil)
- '(js2-strict-missing-semi-warning nil)
- '(js-indent-level 2)
- '(js2-basic-offset 2)
- '(json-indent-level 4)
  '(neo-auto-indent-point t)
  '(package-selected-packages
    (quote
